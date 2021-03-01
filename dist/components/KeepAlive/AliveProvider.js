@@ -13,7 +13,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import React, { PureComponent } from 'react';
 import AliveContext from './context';
-import './AliveProvider.css';
 var AliveProvider = /** @class */ (function (_super) {
     __extends(AliveProvider, _super);
     function AliveProvider(props) {
@@ -42,7 +41,7 @@ var AliveProvider = /** @class */ (function (_super) {
         return (React.createElement(AliveContext.Provider, { value: this.saveCache },
             this.props.children,
             Object.values(this.state).map(function (item) {
-                return (React.createElement("div", { key: item.id, className: "alive-item", ref: function (node) {
+                return (React.createElement("div", { key: item.id, className: "alive-item", style: { width: '100%', height: '100%' }, ref: function (node) {
                         _this.container[item.id] = node;
                     } }, item.component));
             })));

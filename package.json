@@ -1,6 +1,6 @@
 {
   "name": "@highnesslin/router",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "author": "Lion",
   "private": true,
   "main": "dist/index.js",

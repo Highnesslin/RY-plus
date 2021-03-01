@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import AliveContext from './context';
-import './AliveProvider.css';
 
 type IState = {
   [key: string]: {
@@ -47,6 +46,7 @@ export default class AliveProvider extends PureComponent<IProps, IState> {
             <div
               key={item.id}
               className="alive-item"
+              style={{ width: '100%', height: '100%' }}
               ref={node => {
                 this.container[item.id] = node;
               }}

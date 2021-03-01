@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import './AliveProvider.css';
 declare type IState = {
     [key: string]: {
         id: string;

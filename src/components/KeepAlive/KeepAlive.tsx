@@ -2,8 +2,6 @@ import React, { PureComponent, ReactNode } from 'react';
 import AliveContext, { withALive } from './context';
 import cn from 'classnames';
 
-import './KeepAlive.css';
-
 export interface IKeepAliveProps {
   idKey: string;
   className?: string;
@@ -35,7 +33,13 @@ export default withALive(
 
     render() {
       const { className = '' } = this.props;
-      return <div className={cn('keep-alive', className)} ref={node => (this.node = node)}></div>;
+      return (
+        <div
+          className={cn('keep-alive', className)}
+          style={{ width: '100%', height: '100%' }}
+          ref={node => (this.node = node)}
+        ></div>
+      );
     }
   }
 );

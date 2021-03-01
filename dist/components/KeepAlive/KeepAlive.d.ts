@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import './KeepAlive.css';
 export interface IKeepAliveProps {
     idKey: string;
     className?: string;

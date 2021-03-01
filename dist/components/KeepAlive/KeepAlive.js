@@ -51,7 +51,6 @@ var _a;
 import React, { PureComponent } from 'react';
 import AliveContext, { withALive } from './context';
 import cn from 'classnames';
-import './KeepAlive.css';
 export default withALive((_a = /** @class */ (function (_super) {
         __extends(class_1, _super);
         function class_1(props) {
@@ -82,7 +81,7 @@ export default withALive((_a = /** @class */ (function (_super) {
         class_1.prototype.render = function () {
             var _this = this;
             var _a = this.props.className, className = _a === void 0 ? '' : _a;
-            return React.createElement("div", { className: cn('keep-alive', className), ref: function (node) { return (_this.node = node); } });
+            return (React.createElement("div", { className: cn('keep-alive', className), style: { width: '100%', height: '100%' }, ref: function (node) { return (_this.node = node); } }));
         };
         return class_1;
     }(PureComponent)),
